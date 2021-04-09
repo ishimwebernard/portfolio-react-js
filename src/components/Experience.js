@@ -11,7 +11,7 @@ export default function Experience() {
         setActiveTab(n)
     }
     return (
-        <div>
+        <div className="w-full md:mt-8">
             <div className="grid grid-cols-3 tex-center bg-white cursor-pointer  border-2">
                 <p onClick={()=>toggleTab(1)} className={`text-center py-1  ${activeTab === 1 ? 'text-gray-100 bg-blue-600':'text-gray-500 bg-white'}`}>Andela</p>
                 <p onClick={()=>toggleTab(2)} className={`text-center py-1  ${activeTab === 2 ? 'text-gray-100 bg-blue-600':'text-gray-500 bg-white'}`}>Intiti Magazine</p>
