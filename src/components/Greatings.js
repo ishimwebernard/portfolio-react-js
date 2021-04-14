@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link,BrowserRouter as Router} from 'react-router-dom'
 
 export default function Greatings() {
     return (
@@ -10,7 +11,21 @@ export default function Greatings() {
             <p className="text-xl  font-normal text-gray-500 mt-3 leading-6 md:text-xl md:w-1/2" data-aos="fade-up">
                 I am a Rwanda-based software engineer who specializes in building and designing exceptional digital experiences. Currently, I'm a developer at <span className="text-blue-600 leading-sm">Andela</span> focused on building accessible, human-centered products
             </p>
-            <button className="mt-14 p-5 border-2 border-blue-600 text-blue-600 focus:bg-gray-200 focus:outline-none" data-aos="fade-up">Get In Touch</button>
+            <Router>
+                
+       <Router>
+       <Link
+            to='#'
+            onClick={(e) => {
+                window.location = 'mailto:isbernard2001@gmail.com'
+                e.preventDefault();
+            }}
+        >
+        <button className="mt-14 p-5 border-2 border-blue-600 text-blue-600 focus:bg-gray-200 focus:outline-none mx-6">Get In touch</button>
+
+        </Link>
+       </Router>
+            </Router>
         </div>
     )
 }

@@ -11,7 +11,7 @@ export default function Experience() {
         setActiveTab(n)
     }
     return (
-        <div className="w-full md:mt-8">
+        <div className="w-full md:mt-8" data-aos="fade-up">
             <div className="grid grid-cols-3 tex-center bg-white cursor-pointer  border-2">
                 <p onClick={()=>toggleTab(1)} className={`text-center py-1  ${activeTab === 1 ? 'text-gray-100 bg-blue-600':'text-gray-500 bg-white'}`}>Andela</p>
                 <p onClick={()=>toggleTab(2)} className={`text-center py-1  ${activeTab === 2 ? 'text-gray-100 bg-blue-600':'text-gray-500 bg-white'}`}>Intiti Magazine</p>
@@ -28,7 +28,7 @@ export default function Experience() {
                 <List items={Intiti} />
             </div>
             <div className={`mt-6 ${activeTab === 3 ? '':'hidden'}`}>
-            <p>Web Developer <span>@ Intiti Magazine</span></p>
+            <p>Freelancer <span>@ Upwork</span></p>
                 <p>December 2020 - Present</p>
                 <List items={FreeLancer} />
             </div>

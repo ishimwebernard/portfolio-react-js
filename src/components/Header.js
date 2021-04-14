@@ -5,7 +5,7 @@ export default function Header({ toggleOn, togglePressed}) {
     return (
         <div className="flex py-16  px-5">
         <img src={Logo} className="h-8 mt-auto md:h-12" alt="ISHIMWE Bernard"/>
-        <div className=" space-x-2 absolute right-0 mx-5 px-auto hidden md:flex">
+        <div className=" space-x-2 absolute right-0 mx-5 px-auto hidden ">
         <div  className=" text-center flex space-x-4">
             <span className="font-thin text-gray-800 text-md text-blue-600">01</span>   
             <p className="font-normal text-gray-800 text-md">About</p>
