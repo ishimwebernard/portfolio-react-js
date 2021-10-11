@@ -21,7 +21,7 @@ export default function Greatings() {
                 e.preventDefault();
             }}
         >
-        <button className="mt-14 p-5 border-2 border-blue-600 text-blue-600 focus:bg-gray-200 focus:outline-none mx-6">Get In touch</button>
+        <button className="mt-14 p-5 border-2 border-blue-600 text-blue-600 focus:bg-gray-200 focus:outline-none mx-6">Get In touch @ isbernard2001@gmail.com</button>
 
         </Link>
        </Router>

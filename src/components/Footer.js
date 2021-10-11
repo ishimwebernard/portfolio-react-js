@@ -16,7 +16,7 @@ export default function Footer() {
             }}
         >
         <p className="w-full items-center text-center mt-10">
-        <span className="mt-14 p-5 border-2 border-blue-600 text-blue-600 focus:bg-gray-200 focus:outline-none mx-6">Get In touch</span>
+        <span className="mt-14 p-5 border-2 border-blue-600 text-blue-600 focus:bg-gray-200 focus:outline-none mx-6">Get In touch @ isbernard2001@gmail.com</span>
 
         </p>
         </Link>

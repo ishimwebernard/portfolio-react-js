@@ -6,21 +6,32 @@ import SomeThingsIHaveBuilt from './SomeThingsIHaveBuilt'
 import GetInTouch from './GetInTouch'
 import Footer from './Footer'
 import FloaterMapper from './FloaterMapper'
+import Scroll from 'react-scroll'
+let Element = Scroll.Element;
+let scroller = Scroll.scroller;
 
 export default function Main() {
-    const [toggleOn, setToggle] = useState(false)
-    const onTogglePressed = () => {
-        setToggle(!toggleOn)
+    const [visible, setVisible] = useState(false)
+    const changeVisibility = () => {
+        setVisible(!visible)
     }
     return ( 
         <div className="bg-gray-100">
-            <Header toggleOn={toggleOn} togglePressed={onTogglePressed}   />
+            <Header visible={visible} changeVisibility={changeVisibility}   />
+            <Element name='greatings'>
             <Greatings />
-            <Activities />
+            </Element>
+           <Element name='aboutme'>
+           <Activities />
+           </Element>
+            <Element name='work'>
             <SomeThingsIHaveBuilt />
+            </Element>
+            <Element name='getInTouch'>
             <GetInTouch />
+            </Element>
             <Footer />
-            <FloaterMapper toggleOn={toggleOn} togglePressed={setToggle}  />
+            <FloaterMapper visible={visible} changeVisibility={changeVisibility} />
         </div>
     )
 }

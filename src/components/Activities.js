@@ -7,7 +7,7 @@ import ME from '../assets/ME.jpeg'
 
 export default function Activities() {
     return (
-        <div className="mt-40  px-5 mr-40 items-center" data-aos="fade-up">
+        <div className="mt-40  px-5 mr-40 items-center w-full" data-aos="fade-up">
            <div className=" mt-32 md:grid md:grid-cols-3 md:ml-40 md:space-x-4">
             <div className="col-span-2">
             <Title  key="about" number="01." text="About Me"  />
